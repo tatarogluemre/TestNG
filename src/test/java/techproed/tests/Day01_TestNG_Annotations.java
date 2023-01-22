@@ -26,67 +26,81 @@ public class Day01_TestNG_Annotations {
     @Test(priority = 1)  şeklinde test case çalışma sıralaması yaparız.
      */
     @BeforeSuite
-    public void beforeSuite(){
+    public void beforeSuite() {
         System.out.println("Before Suite");
     }
+
     @BeforeTest
-    public void beforeTest(){
+    public void beforeTest() {
         System.out.println("Before Test");
     }
+
     @BeforeGroups
-    public void beforeGroups(){
+    public void beforeGroups() {
         System.out.println("Before Groups");
     }
+
     @BeforeClass
-    public static void beforeClass(){
+    public static void beforeClass() {
         System.out.println("Before Class");
     }
+
     @BeforeMethod
-    public void beforeMethod(){
+    public void beforeMethod() {
         System.out.println("Before Method");
     }
+
     @AfterSuite
-    public void afterSuite(){
+    public void afterSuite() {
         System.out.println("After Suite");
     }
+
     @AfterClass
-    public void afterClass(){
+    public void afterClass() {
         System.out.println("After Class");
     }
+
     @AfterMethod
-    public void afterMethod(){
+    public void afterMethod() {
         System.out.println("After Method");
     }
+
     @Test(priority = 2)
     public void test01() {
 
         System.out.println("Test 1");
 
     }
-    @Test @Ignore
+
+    @Test
+    @Ignore
     public void test02() {
 
         System.out.println("Test 2");
 
     }
+
     @Test(enabled = false)
     public void test03() {
 
         System.out.println("Test 3");
 
     }
+
     @Test(priority = 1)
     public void test04() {
 
         System.out.println("Test 4");
 
     }
+
     @Test(priority = 4)
     public void test05() {
 
         System.out.println("Test 5");
 
     }
+
     @Test(priority = 3)
     public void test06() {
 
