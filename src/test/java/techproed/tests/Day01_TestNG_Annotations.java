@@ -7,7 +7,7 @@ public class Day01_TestNG_Annotations {
 
     /*
     @Test: Test Case oluşturmak içim kullanılır.
-    @Before ve @After : 5 Before 5After anotations var
+    @Before ve @After : 5 Before 5 After anotations var
       suite > tests > grup > class > method  şeklinde seviyeler ilerler
     @BeforeSuite : her bir test suite den once 1 sefer calisir
     @AfterSuite : her bir test suiteden sonra 1 sefer calisir
