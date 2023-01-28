@@ -13,8 +13,12 @@ public class BlueRantalCarHomePage {
     @FindBy(xpath = "(//a[@role='button'])[1]")
     public WebElement loginButton;
 
-
-
     @FindBy(id = "dropdown-basic-button")
-    public WebElement loginAssert;
+    public WebElement userID;
+
+    @FindBy(linkText = "Logout")
+    public WebElement logOutLink;
+
+    @FindBy(xpath = "//button[.='OK']")
+    public WebElement okButton;
 }

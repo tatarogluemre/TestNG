@@ -26,6 +26,10 @@ public class TechProLoginTest {
         assert techProLoginPage.logoutAssert.getText().equals("Login Page");
 
               Driver.closeDriver();
+
+
+
+
     }
 
 

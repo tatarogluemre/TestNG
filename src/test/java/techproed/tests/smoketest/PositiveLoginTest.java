@@ -31,7 +31,7 @@ public class PositiveLoginTest {
         blueRentalCarLoginPage.email.sendKeys(ConfigReader.getProperty("blue_rental_car_mail"));
         blueRentalCarLoginPage.password.sendKeys(ConfigReader.getProperty("blue_rental_car_password"));
         blueRentalCarLoginPage.getLoginButton.click();
-        assert blueRantalCarHomePage.loginAssert.isDisplayed();
+        assert blueRantalCarHomePage.userID.isDisplayed();
         Driver.getDriver().close();
 
 
