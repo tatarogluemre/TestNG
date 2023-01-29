@@ -1,5 +1,6 @@
 package techproed.tests.excelautomation;
 
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.Test;
 import techproed.pages.BlueRantalCarHomePage;
 import techproed.pages.BlueRentalCarLoginPage;
@@ -8,6 +9,7 @@ import techproed.utilities.Driver;
 import techproed.utilities.ExcelUtils;
 import techproed.utilities.ReusableMethods;
 
+import java.io.IOException;
 import java.util.List;
 import java.util.Map;
 
@@ -35,9 +37,8 @@ public class ExcelLogin {
         try{
 
             blueRantalCarHomePage.userID.click();
-
+            blueRantalCarHomePage.logOutLink.click();
             blueRantalCarHomePage.okButton.click();
-
             blueRantalCarHomePage.loginButton.click();
 
             //Login sayfasındayız.
@@ -58,12 +59,17 @@ public class ExcelLogin {
               blueRentalCarLoginPage.email.sendKeys(data.get("username"));
               blueRentalCarLoginPage.password.sendKeys(data.get("password"));
               blueRentalCarLoginPage.getLoginButton.click();
+              ReusableMethods.waitFor(1);
+              ReusableMethods.verifyElementDisplayed(blueRantalCarHomePage.userID);
+              ReusableMethods.getScreenshot("EkranGoruntusu");
 
         }
 
+   }
 
-
-
+    @AfterMethod
+    public void tearDown() {
+        Driver.closeDriver();
     }
 }
 /*

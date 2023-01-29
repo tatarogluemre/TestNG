@@ -9,22 +9,25 @@ import techproed.utilities.Driver;
 import techproed.utilities.ExcelUtils;
 import techproed.utilities.ReusableMethods;
 
-public class ExcelDeneme {
+import java.util.List;
+import java.util.Map;
+
+public class ExcelLogin2 {
     BlueRentalCarLoginPage blueRentalCarLoginPage;
     BlueRantalCarHomePage blueRantalCarHomePage;
     ExcelUtils excelUtils;
-
+    List<Map<String, String>> excelDatalari;
     @Test
     public void testLogin() {
-         Driver.getDriver().get(ConfigReader.getProperty("blue_rental_car_url"));
+        Driver.getDriver().get(ConfigReader.getProperty("blue_rental_car_url"));
         blueRantalCarHomePage = new BlueRantalCarHomePage();
         blueRentalCarLoginPage = new BlueRentalCarLoginPage();
         excelUtils = new ExcelUtils("src/test/java/resources/mysmoketestdata.xlsx","customer_info");
-
-        for(int i= 1 ; i<excelUtils.rowCount();i++){
+         excelDatalari = excelUtils.getDataList();
+        for(Map<String,String> data : excelDatalari ){
             blueRantalCarHomePage.loginButton.click();
-            blueRentalCarLoginPage.email.sendKeys(excelUtils.getCellData(i,0));
-            blueRentalCarLoginPage.password.sendKeys(excelUtils.getCellData(i,1));
+            blueRentalCarLoginPage.email.sendKeys(data.get("username"));
+            blueRentalCarLoginPage.password.sendKeys(data.get("password"));
             blueRentalCarLoginPage.getLoginButton.click();
             ReusableMethods.waitFor(2);
             blueRantalCarHomePage.userID.click();
