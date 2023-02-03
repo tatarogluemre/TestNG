@@ -9,6 +9,7 @@ import techproed.pages.BlueRantalCarHomePage;
 import techproed.pages.BlueRentalCarLoginPage;
 import techproed.utilities.ConfigReader;
 import techproed.utilities.Driver;
+import techproed.utilities.ReusableMethods;
 
 import java.time.Duration;
 
@@ -30,7 +31,7 @@ public class NegativeLoginTest {
 
     @Test
     public void US100208_Negative_Login() {
-
+        ReusableMethods.waitFor(5);
         Driver.getDriver().get(ConfigReader.getProperty("blue_rental_car_url"));
         blueRantalCarHomePage=new BlueRantalCarHomePage();
         blueRentalCarLoginPage=new BlueRentalCarLoginPage();
@@ -41,7 +42,7 @@ public class NegativeLoginTest {
         WebDriverWait wait = new WebDriverWait(Driver.getDriver(), Duration.ofSeconds(15));
         wait.until(ExpectedConditions.visibilityOf(blueRentalCarLoginPage.assertNotLogin));
         assert blueRentalCarLoginPage.assertNotLogin.getText().contains("not found");
-        Driver.getDriver().close();
+        Driver.closeDriver();
 
     }
 }

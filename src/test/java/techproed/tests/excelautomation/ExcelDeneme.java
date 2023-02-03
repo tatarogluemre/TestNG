@@ -14,7 +14,7 @@ public class ExcelDeneme {
     BlueRantalCarHomePage blueRantalCarHomePage;
     ExcelUtils excelUtils;
 
-    @Test
+    @Test(groups="regression-tests")
     public void testLogin() {
          Driver.getDriver().get(ConfigReader.getProperty("blue_rental_car_url"));
         blueRantalCarHomePage = new BlueRantalCarHomePage();

@@ -1,4 +1,4 @@
-package techproed.tests;
+package techproed.tests.smoketest;
 
 import org.openqa.selenium.interactions.Actions;
 import org.testng.annotations.Test;

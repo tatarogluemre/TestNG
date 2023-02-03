@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="C:/Users/CASPER/IdeaProjects/TestNG">
+        <classes>
+            <class name="techproed.tests.dataprovider.DataProviderTest1">
+                <methods>
+                    <include name="urunler"/>
+                    <include name="testDataProvider"/>
+                    <include name="testDataProviderName"/>
+                    <include name="testDataProviderExcel"/>
+                </methods>
+            </class>
+            <class name="techproed.tests.dataprovider.DataProviderTest2">
+                <methods>
+                    <include name="testDataProviderMusteriVerileri"/>
+                    <include name="testDataProviderMusteriHizmetleri"/>
+                    <include name="testDataProviderPersonelVerileri"/>
+                    <include name="testExcelDataProvider"/>
+                </methods>
+            </class>
+            <class name="techproed.tests.dataprovider.ExcelDataProvider">
+                <methods>
+                    <include name="testLogin"/>
+                </methods>
+            </class>
+            <class name="techproed.tests.excelautomation.ExcelDeneme">
+                <methods>
+                    <include name="testLogin"/>
+                </methods>
+            </class>
+            <class name="techproed.tests.excelautomation.ExcelLogin">
+                <methods>
+                    <include name="customerLogin"/>
+                </methods>
+            </class>
+            <class name="techproed.tests.excelautomation.ExcelLogin2">
+                <methods>
+                    <include name="testLogin"/>
+                </methods>
+            </class>
+            <class name="techproed.tests.smoketest.Day01_TestNG_Annotations">
+                <methods>
+                    <include name="beforeSuite"/>
+                    <include name="test01"/>
+                    <include name="test02"/>
+                    <include name="test03"/>
+                    <include name="test04"/>
+                    <include name="test05"/>
+                    <include name="test06"/>
+                </methods>
+            </class>
+            <class name="techproed.tests.smoketest.Day02_DependsOnMethods">
+                <methods>
+                    <include name="homeTest"/>
+                    <include name="searchTest"/>
+                    <include name="paymentTest"/>
+                </methods>
+            </class>
+            <class name="techproed.tests.smoketest.Day02_DriverConfigTest">
+                <methods>
+                    <include name="testFirsTest"/>
+                </methods>
+            </class>
+            <class name="techproed.tests.smoketest.Day02_SoftAssertion">
+                <methods>
+                    <include name="testSoftAssertion"/>
+                </methods>
+            </class>
+            <class name="techproed.tests.smoketest.Day03_OpenSourceLogin">
+                <methods>
+                    <include name="testLogin"/>
+                </methods>
+            </class>
+            <class name="techproed.tests.smoketest.NegativeLoginTest">
+                <methods>
+                    <include name="US100208_Negative_Login"/>
+                </methods>
+            </class>
+            <class name="techproed.tests.smoketest.PositiveLoginTest">
+                <methods>
+                    <include name="US100201_Admin_Login"/>
+                </methods>
+            </class>
+            <class name="techproed.tests.smoketest.TechProLoginTest">
+                <methods>
+                    <include name="testLogin"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

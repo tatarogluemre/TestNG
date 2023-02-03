@@ -5,6 +5,7 @@ import techproed.pages.BlueRantalCarHomePage;
 import techproed.pages.BlueRentalCarLoginPage;
 import techproed.utilities.ConfigReader;
 import techproed.utilities.Driver;
+import techproed.utilities.ReusableMethods;
 
 public class PositiveLoginTest {
 
@@ -23,7 +24,7 @@ public class PositiveLoginTest {
 //    https://www.bluerentalcars.com/
 //    Admin password: 12345
 //    Admin email: jack@gmail.com
-
+        ReusableMethods.waitFor(3);
         Driver.getDriver().get(ConfigReader.getProperty("blue_rental_car_url"));
         blueRantalCarHomePage=new BlueRantalCarHomePage();
         blueRentalCarLoginPage=new BlueRentalCarLoginPage();

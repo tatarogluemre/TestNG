@@ -1,4 +1,4 @@
-package techproed.tests;
+package techproed.tests.smoketest;
 
 import org.testng.annotations.*;
 
@@ -80,14 +80,14 @@ public class Day01_TestNG_Annotations {
 
     }
 
-    @Test(enabled = false)
+    @Test(enabled = false,groups="regression-tests")
     public void test03() {
 
         System.out.println("Test 3");
 
     }
 
-    @Test(priority = 1)
+    @Test(priority = 1 ,groups="regression-tests")
     public void test04() {
 
         System.out.println("Test 4");
@@ -101,7 +101,7 @@ public class Day01_TestNG_Annotations {
 
     }
 
-    @Test(priority = 3)
+    @Test(priority = 3,groups="regression-tests")
     public void test06() {
 
         System.out.println("Test 6");

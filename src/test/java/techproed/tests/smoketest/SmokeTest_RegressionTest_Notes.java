@@ -1,4 +1,4 @@
-package techproed.tests;
+package techproed.tests.smoketest;
 
 public class SmokeTest_RegressionTest_Notes {
     /*
