@@ -9,7 +9,7 @@ import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 import techproed.utilities.Driver;
 
-
+//Burada 1. yol olan @Listeners annotations ile test ettik.
 @Listeners(techproed.utilities.Listeners.class)
 public class ListenersTest01 {
     //        1. Utilities de Listeners class olustur.

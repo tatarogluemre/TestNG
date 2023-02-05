@@ -7,32 +7,28 @@ import org.testng.annotations.Test;
 import techproed.utilities.Driver;
 
 public class ListenersTest04 {
-    @Test(retryAnalyzer = techproed.utilities.ListenersRetry.class)
+    @Test
     public void test1(){
         System.out.println("PASS");
         Assert.assertTrue(true);
     }
-
-    @Test(retryAnalyzer = techproed.utilities.ListenersRetry.class)
-    public void test2() {
+    @Test
+    public void test2(){
         System.out.println("FAIL");
-        Driver.getDriver().get("https://www.google.com");
-        Driver.getDriver().findElement(By.xpath("asdgadfhadfgnh"));
-        Driver.closeDriver();
-
+//        throw new NoSuchElementException("No Such Element Exception");
+        Driver.getDriver().get("https://www.amazon.com");
+        Driver.getDriver().findElement(By.xpath("asdgadfhadfgnh"));//FAIL ETSIN
     }
-
-    @Test(retryAnalyzer = techproed.utilities.ListenersRetry.class)
-    public void test3() {
-        System.out.println("Skipped");
-        throw new SkipException("Metodu Atla");
+    @Test
+    public void test3(){
+        System.out.println("SKIP");
+        throw new SkipException("Metotu Atla");
     }
-
-    @Test(retryAnalyzer = techproed.utilities.ListenersRetry.class)
-    public void test4() {
-        System.out.println("Exception Throw");
+    @Test
+    public void test4(){
+        System.out.println("EXCEPTION");
+//        throw new NoSuchElementException("No Such Element Exception");
         Driver.getDriver().get("https://www.techproeducation.com");
-        Driver.getDriver().findElement(By.xpath("asdgadfhadfgnh"));
-        Driver.closeDriver();
+        Driver.getDriver().findElement(By.xpath("asdgadfhadfgnh"));//FAIL ETSIN
     }
 }

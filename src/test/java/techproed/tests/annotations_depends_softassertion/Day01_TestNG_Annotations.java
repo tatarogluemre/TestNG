@@ -1,4 +1,4 @@
-package techproed.tests.smoketest;
+package techproed.tests.annotations_depends_softassertion;
 
 import org.testng.annotations.*;
 

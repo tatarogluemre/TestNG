@@ -1,8 +1,7 @@
-package techproed.tests.smoketest;
+package techproed.tests.annotations_depends_softassertion;
 
 import org.testng.Assert;
 import org.testng.annotations.Test;
-import org.testng.asserts.SoftAssert;
 
 public class Day02_DependsOnMethods {
     @Test

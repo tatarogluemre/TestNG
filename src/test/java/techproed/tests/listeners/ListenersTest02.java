@@ -7,7 +7,7 @@ import org.testng.annotations.Test;
 import techproed.utilities.Driver;
 
 public class ListenersTest02 {
-
+//Burada 2. yol Listeners.xml oluşturarak test ettik.
     @Test
     public void test1(){
         System.out.println("PASS");

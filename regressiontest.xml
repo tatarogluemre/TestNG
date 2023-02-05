@@ -1,5 +1,9 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
 <suite name="minor regression" verbose="2">
+    <listeners>
+        <listener class-name="techproed.utilities.ListenersRetryAnalyzer"></listener>
+    </listeners>
+<!--    Listeners ile Tüm fail olan testler tekrar çalıştırılır-->
     <test name="Regression1">
         <packages>
             <!--   Not: name üstpaket.* ile tüm testler çalıştırılır.   -->

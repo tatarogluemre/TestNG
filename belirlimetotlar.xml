@@ -39,7 +39,7 @@
                     <include name="testLogin"/>
                 </methods>
             </class>
-            <class name="techproed.tests.smoketest.Day01_TestNG_Annotations">
+            <class name="techproed.tests.annotations_depends_softassertion.Day01_TestNG_Annotations">
                 <methods>
                     <include name="beforeSuite"/>
                     <include name="test01"/>
@@ -50,39 +50,39 @@
                     <include name="test06"/>
                 </methods>
             </class>
-            <class name="techproed.tests.smoketest.Day02_DependsOnMethods">
+            <class name="techproed.tests.annotations_depends_softassertion.Day02_DependsOnMethods">
                 <methods>
                     <include name="homeTest"/>
                     <include name="searchTest"/>
                     <include name="paymentTest"/>
                 </methods>
             </class>
-            <class name="techproed.tests.smoketest.Day02_DriverConfigTest">
+            <class name="techproed.tests.annotations_depends_softassertion.Day02_DriverConfigTest">
                 <methods>
                     <include name="testFirsTest"/>
                 </methods>
             </class>
-            <class name="techproed.tests.smoketest.Day02_SoftAssertion">
+            <class name="techproed.tests.annotations_depends_softassertion.Day02_SoftAssertion">
                 <methods>
                     <include name="testSoftAssertion"/>
                 </methods>
             </class>
-            <class name="techproed.tests.smoketest.Day03_OpenSourceLogin">
+            <class name="techproed.tests.annotations_depends_softassertion.Day03_OpenSourceLogin">
                 <methods>
                     <include name="testLogin"/>
                 </methods>
             </class>
-            <class name="techproed.tests.smoketest.NegativeLoginTest">
+            <class name="techproed.smoketest.NegativeLoginTest">
                 <methods>
                     <include name="US100208_Negative_Login"/>
                 </methods>
             </class>
-            <class name="techproed.tests.smoketest.PositiveLoginTest">
+            <class name="techproed.smoketest.PositiveLoginTest">
                 <methods>
                     <include name="US100201_Admin_Login"/>
                 </methods>
             </class>
-            <class name="techproed.tests.smoketest.TechProLoginTest">
+            <class name="techproed.smoketest.TechProLoginTest">
                 <methods>
                     <include name="testLogin"/>
                 </methods>

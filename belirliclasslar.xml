@@ -1,14 +1,14 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
 
 <suite name="Suite1" verbose="1" >
-    <test name="Negative Login Test" >
-        <classes>
-            <class name="techproed.tests.smoketest.NegativeLoginTest" />
-        </classes>
-    </test>
     <test name="Positive Login Test">
         <classes>
             <class name="techproed.tests.smoketest.PositiveLoginTest"/>
+        </classes>
+    </test>
+    <test name="Negative Login Test">
+        <classes>
+            <class name="techproed.tests.smoketest.NegativeLoginTest"/>
         </classes>
     </test>
 </suite>

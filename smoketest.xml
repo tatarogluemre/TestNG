@@ -5,7 +5,6 @@
     <!--   Not: name geçerli bir klasör ismi olmalı klasörün path i root dosyasından (techproed) başlamalı
                 Kaydet save yapılmalı    -->
 
-          <package name="techproed.tests.dataprovider"></package>
           <package name="techproed.tests.smoketest"></package>
       </packages>
   </test>
